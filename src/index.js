@@ -1,5 +1,6 @@
 import { home } from './home';
 import { menu } from './menu';
+import './styles/navbar.css';
 
 
 var homeButton = document.querySelector('#Home');
@@ -8,7 +9,6 @@ let content = document.querySelector('.content');
 
 home();
 
-// Now you can add event listeners or manipulate these buttons
 homeButton.addEventListener('click', function() {
   content.innerHTML = '';
   home();
@@ -21,4 +21,3 @@ menuButton.addEventListener('click', function() {
 
 //home(); 
 
-// die idee ist verschiedene module zu schreiben und sie dann mit click event listenener aufzurufen
